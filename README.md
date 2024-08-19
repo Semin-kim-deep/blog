@@ -124,7 +124,7 @@ Second, open the `js/common.js` file and replace the `userId` and `accessToken` 
 
 Third, open the `_data/settings.yml` file and replace the `instafeed: false` on `instafeed: true` value.
 
-    # Instagram Feed
+    # Instagra Feed
     instafeed: false # To enable the instafeed, use the value true. To turn off use the value false.
 
 
