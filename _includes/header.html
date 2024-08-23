@@ -25,6 +25,14 @@
               <li class="nav__item">
                 <a href="{{site.baseurl}}/" class="nav__link">Home</a>
               </li>
+             <!-- 카테고리 메뉴 추가 -->
+              <li class="nav__item">
+                <a href="{{ site.baseurl }}/categories" class="nav__link">카테고리</a>
+                <ul class="nav__list list-reset">
+                  {% for category in site.categories %}
+                    <li class="nav__item">
+                      <a href="{{ site.baseurl }}/categories/{{ category[0] | downcase | replace: ' ', '-' }}" class="nav__link">{{ category[0] }}</a>
+                    </li>
               {% for page in site.pages %}
                 {% unless page.name == 'tags.html' or page.name == '404.html' %}
               {% if page.title %}
